@@ -132,7 +132,7 @@ client.on('message' ,async (message) => {
 
         if(args[0] > polls.length || args[0] <= 0)
         {
-            message.channel.send("Invalid pole index selected, please select valid pole index")
+            message.channel.send("Invalid poll index selected, please select valid poll index")
             return ;
         }
         message.channel.send(`Question : ${polls[args[0]-1].ques} `)
@@ -148,7 +148,7 @@ client.on('message' ,async (message) => {
         }
         if(args[0] > polls.length || args[0]<=0)
         {
-            message.channel.send("Invalid pole index selected, please select valid poll index")
+            message.channel.send("Invalid poll index selected, please select valid poll index")
             return ;
         }
 

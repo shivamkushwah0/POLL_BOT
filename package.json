@@ -2,6 +2,10 @@
   "name": "mernApp",
   "version": "1.0.0",
   "main": "app.js",
+  "engines": {
+    "node": "16.6.1",
+    "npm": "7.20.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"

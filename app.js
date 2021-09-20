@@ -161,6 +161,14 @@ client.on('message' ,async (message) => {
         
         message.channel.send("The polls has been deleted ")
     }
+    else if(command === "poll-commands")
+    {
+        message.channel.send("$poll <question> --> Creates a poll for the given question ");
+        message.channel.send("$poll-list       --> Shows the ongoing poll list if there is any ");
+        message.channel.send("$poll-delete <index(1-indexing)> --> deletes the poll at a particular index if there is any ");
+        message.channel.send("$poll-result <index(1-indexing)> --> Shows the current result for the poll");
+        message.channel.send("$poll-commands   --> Shows all the available poll commands ");
+    }
 
     else {
         message.channel.send("No matching command found")

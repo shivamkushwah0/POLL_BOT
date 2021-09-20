@@ -17,6 +17,7 @@ const generator = (...args)  => {
         messageID : args[1]
     }
     polls.push(s);
+    return ;
 }
 
 const ReactionAdd = (emoji , id ) =>{

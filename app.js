@@ -4,6 +4,9 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
     partials: ['MESSAGE', 'CHANNEL', 'GUILD_MESSAGE_REACTIONS' , 'REACTION']
 });
 const token = process.env.BOT_TOKEN;
+const express = require(express);
+const port = process.env.PORT || 3000 ;
+const app = express();
 
 // [{ques , favour , oppose}]
 
@@ -195,3 +198,5 @@ client.on('ready' , (client) => {
 
 })
 client.login(token);
+
+app.listen(process.env.PORT || port)
